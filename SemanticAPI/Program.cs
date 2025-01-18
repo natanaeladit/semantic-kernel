@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 var modelId = Environment.GetEnvironmentVariable("SEMANTIC_API_MODEL_ID");
 var apiKey = Environment.GetEnvironmentVariable("SEMANTIC_API_KEY");
 
-// Create a kernel with Azure OpenAI chat completion
+// Create a kernel with OpenAI chat completion
 var builder = Kernel.CreateBuilder().AddOpenAIChatCompletion(modelId, apiKey);
 
 // Add enterprise components
